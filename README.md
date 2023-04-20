@@ -66,7 +66,9 @@ To make predictions using the trained model, run the models script and provide i
 
 **Evaluation**
 
-The accuracy of the model was evaluated using mean absolute error (MAE) and mean squared error (MSE) metrics on a held-out test set. The resulting MAE was X and the resulting MSE was Y.
+The accuracy of the model was evaluated using  mean squared error (MSE) metrics on a held-out test set. The resulting MAE was X and the resulting MSE was Y.
+
+The Mean Squared Error (MSE) of a model is a measure of how well it fits the data, calculated as the average of the squared differences between the predicted values and the actual values. An MSE of 485.17 indicates that, on average, the model's predictions are off by the square root of 485.17, or approximately 22 units.
 
 ## Model-
 The model was trained using Jupiter/Python notebook in this repository. Model accuracy results are provided below..
