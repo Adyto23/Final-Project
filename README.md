@@ -39,29 +39,29 @@ To make predictions using the trained model, run the models script and provide i
 * 
 | Initial Column | Comments 
 
-'artist' - Both artist and title are dropped as they are quite unique 
-'title' - Both artist and title are dropped as they are quite unique 
-'release_format' - what format is the release at: 12", 7", LP , Compilation , CD , Digital
-'number_of_tracks' 
-'price'- price in dollars was edited to float
-'rating' - a grade to the release by number
-'votes' - probably should be dropped 
-'have'- How many people have this record 
-'want'- how many people added to their Want List 
-'limited_edition' - 0 - not limited , 1 - limited edition release 
-'media_condition'- shows information about the Media condition please see new columns for the rate mapper 
-'sleeve_condition' - shows information about the Sleeve condition please see new columns for the rate mapper 
-'release_page' - URL of the release , was dropped in the process
-'release_date' - shows Day , Month and  Year and got dropped as we used only year
-'label'	- this column is showing the label name and code , was split to two columns
+* 'artist' - Both artist and title are dropped as they are quite unique 
+* 'title' - Both artist and title are dropped as they are quite unique 
+* 'release_format' - what format is the release at: 12", 7", LP , Compilation , CD , Digital
+* 'number_of_tracks' 
+* 'price'- price in dollars was edited to float
+* 'rating' - a grade to the release by number
+* 'votes' - probably should be dropped 
+* 'have'- How many people have this record 
+* 'want'- how many people added to their Want List 
+* 'limited_edition' - 0 - not limited , 1 - limited edition release 
+* 'media_condition'- shows information about the Media condition please see new columns for the rate mapper 
+* 'sleeve_condition' - shows information about the Sleeve condition please see new columns for the rate mapper 
+* 'release_page' - URL of the release , was dropped in the process
+* 'release_date' - shows Day , Month and  Year and got dropped as we used only year
+* 'label'	- this column is showing the label name and code , was split to two columns
 
 | New Column |
-'genre'- was added in the scrating process 
-'label_name'- label name was kept was it might be similar to some releases 
-'label_code'- though this was created , we choose to remove it from the dataframe 
-'year'- as the day and month in release_date are not filled we selected only the year which will give a bit more correlations 
-'sleeve_condition_scale' - scale_mapper_sleeve = {"M":1, "NM ":2, "VG+":3, "VG":4 , "G+": 5, "G":6 , "F": 7,"P": 8, "no cover": 9}
-'media_condition_scale' - scale_mapper_record = {"M":1, "NM ":2, "VG+":3, "VG":4 , "G+": 5, "G":6 , "F": 7,"P": "8"}
+* 'genre'- was added in the scrating process 
+* 'label_name'- label name was kept was it might be similar to some releases 
+* 'label_code'- though this was created , we choose to remove it from the dataframe 
+* 'year'- as the day and month in release_date are not filled we selected only the year which will give a bit more correlations 
+* 'sleeve_condition_scale' - scale_mapper_sleeve = {"M":1, "NM ":2, "VG+":3, "VG":4 , "G+": 5, "G":6 , "F": 7,"P": 8, "no cover": 9}
+* 'media_condition_scale' - scale_mapper_record = {"M":1, "NM ":2, "VG+":3, "VG":4 , "G+": 5, "G":6 , "F": 7,"P": "8"}
 
 
 **Evaluation**
