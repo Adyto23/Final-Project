@@ -59,12 +59,15 @@ The model was trained using Jupiter/Python notebook in this repository. Model ac
 ## with Hyperparameters- 
 
 Mean Squared Error: 485.17
+****************************
 R2 Score: 0.48
 
 ## RandomForestRegressor- 
 
-ValType	R2-Score	MSE	RMSE
+ValType	R2-Score	  MSE	        RMSE
+***************************************
 0	Train	0.914136	122.972904	11.089315
+***************************************
 1	Test	0.455929	510.968876	22.604621
 
 ** Conclusion-
