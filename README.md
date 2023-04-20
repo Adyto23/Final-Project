@@ -33,22 +33,36 @@ To make predictions using the trained model, run the models script and provide i
 
 ## Data information**
 
-* 10 columns 
-* 1222997 rows 
+* 13 columns 
+* 7698 rows 
 * columns:
 * 
-| Initial Column | Comments | New Column |
-Id - Wikidata Id
-Name - Full Name
-Short description - Will detail the Profession of the person and should they have more than one it will be listed in this column, in this column I have tried to sum it to one Profession in order to get a more clear view
-Gender - Gender / Sex
-Country - Country / historical region, deleted in this column countries after the charecter ";" in order to get a better overview in the data
-Occupation - Occupation title
-Birth year - Birth year
-Death year - Death year, limiting this column to years above 1930
-Manner of death - Such as suicide, natural causes or capital punishment
-Age of death - Age of death , changing the range to between 18-100
-AgeRange - New column created for ranges: 18-29, 30-39, 40-49, 50-59, 70+
+| Initial Column | Comments 
+
+'artist' - Both artist and title are dropped as they are quite unique 
+'title' - Both artist and title are dropped as they are quite unique 
+'release_format' - what format is the release at: 12", 7", LP , Compilation , CD , Digital
+'number_of_tracks' 
+'price'- price in dollars was edited to float
+'rating' - a grade to the release by number
+'votes' - probably should be dropped 
+'have'- How many people have this record 
+'want'- how many people added to their Want List 
+'limited_edition' - 0 - not limited , 1 - limited edition release 
+'media_condition'- shows information about the Media condition please see new columns for the rate mapper 
+'sleeve_condition' - shows information about the Sleeve condition please see new columns for the rate mapper 
+'release_page' - URL of the release , was dropped in the process
+'release_date' - shows Day , Month and  Year and got dropped as we used only year
+'label'	- this column is showing the label name and code , was split to two columns
+
+| New Column |
+'genre'- was added in the scrating process 
+'label_name'- label name was kept was it might be similar to some releases 
+'label_code'- though this was created , we choose to remove it from the dataframe 
+'year'- as the day and month in release_date are not filled we selected only the year which will give a bit more correlations 
+'sleeve_condition_scale' - scale_mapper_sleeve = {"M":1, "NM ":2, "VG+":3, "VG":4 , "G+": 5, "G":6 , "F": 7,"P": 8, "no cover": 9}
+'media_condition_scale' - scale_mapper_record = {"M":1, "NM ":2, "VG+":3, "VG":4 , "G+": 5, "G":6 , "F": 7,"P": "8"}
+
 
 **Evaluation**
 
