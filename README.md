@@ -36,7 +36,7 @@ To make predictions using the trained model, run the models script and provide i
 * 13 columns 
 * 7698 rows 
 * columns:
-* 
+
 | Initial Column | Comments 
 
 * 'artist' - Both artist and title are dropped as they are quite unique 
