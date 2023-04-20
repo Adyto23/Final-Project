@@ -1,9 +1,10 @@
 
 **Discogs Price Prediction Model**
+
 **Ady Toledano**  
 **IronHack, Remote Course, Berlin 24 Mar 2023**
 
-## Overview
+**Overview**
 
 This repository contains code for a machine learning model that predicts the prices of vinyl records on Discogs based on generes and various attributes of the record such as the artist, release year, genre, condition, and more.
 
@@ -24,13 +25,13 @@ The data used for training and testing the model was obtained from the Discogs M
 
 The data that was collected includes information on over  vinyl 8000 records from various genres and artists.
 
-**Usage-
+**Usage**
 
 To train the model, run the script. This script will preprocess the data, split it into training and testing sets, and train the model using a LinearRegression, random forest algorithm and trying to make a better result with Hyperparameters and cross validation.
 
 To make predictions using the trained model, run the models script and provide it with the necessary inputs such as the artist, release year, genre, and condition of the record. The script will then output a predicted price for the record based on the model.
 
-## Data information-
+## Data information**
 
 * 10 columns 
 * 1222997 rows 
@@ -49,7 +50,7 @@ Manner of death - Such as suicide, natural causes or capital punishment
 Age of death - Age of death , changing the range to between 18-100
 AgeRange - New column created for ranges: 18-29, 30-39, 40-49, 50-59, 70+
 
-**Evaluation-
+**Evaluation**
 
 The accuracy of the model was evaluated using mean absolute error (MAE) and mean squared error (MSE) metrics on a held-out test set. The resulting MAE was X and the resulting MSE was Y.
 
@@ -71,7 +72,7 @@ ValType	R2-Score	  MSE	        RMSE
 1	Test	0.455929	510.968876	22.604621
 
 
-***Conclusion-
+**Conclusion**
 
 This model can be used by vinyl record collectors and sellers to get an estimate of the value of a particular record before buying or selling it on Discogs.
 
