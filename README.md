@@ -71,7 +71,7 @@ ValType	R2-Score	  MSE	        RMSE
 1	Test	0.455929	510.968876	22.604621
 
 
-**Conclusion-
+***Conclusion-
 
 This model can be used by vinyl record collectors and sellers to get an estimate of the value of a particular record before buying or selling it on Discogs.
 
