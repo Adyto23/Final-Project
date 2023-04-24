@@ -89,8 +89,11 @@ ValType	R2-Score	  MSE	        RMSE
 ***************************************
 1	Test	0.495189	381.481155	19.531543
 
+## ensemble_prediction
 
-
+Ensemble R2-Score: 0.5189
+Ensemble MSE: 363.5314
+Ensemble RMSE: 19.0665
 
 
 **Conclusion**
