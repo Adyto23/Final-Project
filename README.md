@@ -71,20 +71,26 @@ The accuracy of the model was evaluated using  mean squared error (MSE) metrics 
 The Mean Squared Error (MSE) of a model is a measure of how well it fits the data, calculated as the average of the squared differences between the predicted values and the actual values. An MSE of 485.17 indicates that, on average, the model's predictions are off by the square root of 485.17, or approximately 22 units.
 
 ## Model-
-The model was trained using Jupiter/Python notebook in this repository. Model accuracy results are provided below..
+The model was trained using Jupiter/Python notebook in this repository. Model accuracy results are provided below.
+
+
+After last changes in data the model worked a bit better with RandomForestRegressor.
 
 ## with Hyperparameters- 
 
-* Mean Squared Error: 485.17
-* R2 Score: 0.48
+Mean Squared Error: 422.33
+R2 Score: 0.44
 
 ## RandomForestRegressor- 
 
 ValType	R2-Score	  MSE	        RMSE
 ***************************************
-0	Train	0.914136	122.972904	11.089315
+0	Train	0.923842	62.291692	7.892509
 ***************************************
-1	Test	0.455929	510.968876	22.604621
+1	Test	0.495189	381.481155	19.531543
+
+
+
 
 
 **Conclusion**
