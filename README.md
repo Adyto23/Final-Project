@@ -74,7 +74,7 @@ The Mean Squared Error (MSE) of a model is a measure of how well it fits the dat
 The model was trained using Jupiter/Python notebook in this repository. Model accuracy results are provided below.
 
 
-After last changes in data the model worked a bit better with RandomForestRegressor.
+After last changes in data the model worked a bit better with ensemble_prediction, you will be able to see the difference between the models below:
 
 ## with Hyperparameters- 
 
